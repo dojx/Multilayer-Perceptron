@@ -39,9 +39,13 @@ Multilayer perceptron class written in Python.
     Both arguments must be numpy arrays. The length of each label and the number of neurons in the last layer must be equal.
     
 ## Optional attributes
-* ```perceptron.threshold = ('epochs', 500) # Train for 500 epochs (default)```:
+* ```perceptron.threshold```:
 
-    Training threshold. Can be switched to convergence error mode:
+    Epoch mode (default):
+    ```
+    perceptron.threshold = ('epoch', 500) # Train for 500 epochs
+    ```
+    Convergence error mode:
     ```
     perceptron.threshold = ('error', 0.01) # Train until convergence error is 0.01 or less
     ```
