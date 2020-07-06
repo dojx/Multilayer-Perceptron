@@ -4,7 +4,7 @@ Multilayer perceptron class written in Python.
 ## Features
 
 ### Allows the user to choose:
-* No. of neurons per layer
+* Number of neurons per layer
 * Activation function per layer
 * Training threshold (Epochs vs. Convergence Error)
 * Type of gradient descent (Stochastic, Batch & Mini-Batch)
@@ -30,10 +30,14 @@ Multilayer perceptron class written in Python.
     * First layer will have 15 neurons, all using the sigmoid activation function
     * Last layer will have 1 neuron using the linear activation function
     
+    By default if this argument is not passed, the perceptron will have 1 layer with 1 neuron using the linear activation function.
+    
  4. Train the perceptron:
     ```
     perceptron.train(training_inputs, labels)
     ```
-    Both arguments must be numpy arrays. The length of each label and the no. of neurons in the last layer must be equal.
+    Both arguments must be numpy arrays. The length of each label and the number of neurons in the last layer must be equal.
     
-### Optional arguments
+## Optional attributes
+* ```perceptron.threshold = ('epochs', 500) ```
+
