@@ -15,8 +15,8 @@ layers = (
     (1, 'LIN')
 )
 
-perceptron = Perceptron(2, layers, threshold=('error', 0.1))
-perceptron.train(training_inputs, labels, batch_size=7)
+perceptron = Perceptron(2, layers, threshold=('error', 0.01))
+perceptron.train(training_inputs, labels, batch_size=1)
 
 # Graphing results
 x = np.arange(-np.pi, np.pi, 0.1)
@@ -32,9 +32,17 @@ for i in range(len(x)):
         gz2[i, j] = foo(np.array([gx[i, j], gy[i, j]]))  # Real function
 
 fig1 = plt.figure(1).gca(projection='3d')
+plt.title("Trained Perceptron")
+plt.xlim = [-3, 3]
+plt.ylim = [-3, 3]
+plt.zlim = [-3, 3]
 fig1.plot_surface(gx, gy, gz1, cmap='viridis')
 
 fig2 = plt.figure(2).gca(projection='3d')
+plt.title("Original")
+plt.xlim = [-3, 3]
+plt.ylim = [-3, 3]
+plt.zlim = [-3, 3]
 fig2.plot_surface(gx, gy, gz2, cmap='viridis')
 
 plt.show()
