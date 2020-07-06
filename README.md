@@ -6,8 +6,8 @@ Multilayer perceptron class written in Python.
 ### Allows the user to choose:
 * Number of neurons per layer
 * Activation function per layer
-* Training threshold (Epochs vs. Convergence Error)
-* Type of gradient descent (Stochastic, Batch & Mini-Batch)
+* Training threshold (Epochs or Convergence Error)
+* Type of gradient descent (Stochastic, Batch or Mini-Batch)
 
 ## Usage
 1.  Copy "perceptron.py" into project directory.
