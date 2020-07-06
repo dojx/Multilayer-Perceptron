@@ -40,6 +40,7 @@ Multilayer perceptron class written in Python.
     
 ## Optional attributes
 * ```perceptron.threshold = ('epochs', 500) # Train for 500 epochs (default)```:
+
     Training threshold. Can be switched to convergence error mode:
     ```
     perceptron.threshold = ('error', 0.01) # Train until convergence error is 0.01 or less
