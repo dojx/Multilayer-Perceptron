@@ -47,7 +47,7 @@ Multilayer perceptron class written in Python.
     ```
     Convergence error mode:
     ```
-    perceptron.threshold = ('error', 0.01) # Train until convergence error is 0.01 or less
+    perceptron.threshold = ('error', 0.01) # Train until total error is 0.01 or less (mean-squared error)
     ```
     
 
