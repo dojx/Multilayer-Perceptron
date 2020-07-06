@@ -42,7 +42,7 @@ Multilayer perceptron class written in Python.
 #### Initialization
 * ```perceptron.learning_rate```
 
-    Learning rate is between 0 and 1, larger values make the weight changes more volatile. Default is 0.01
+    Learning rate is between 0 and 1, larger values make the weight changes more volatile. Default value is 0.01.
 * ```perceptron.threshold```
 
     Epoch mode (default):
