@@ -9,7 +9,7 @@ Multilayer perceptron class written in Python.
 * Training threshold (Epochs vs. Convergence Error)
 * Type of gradient descent (Stochastic, Batch & Mini-Batch)
 
-## Setup
+## Usage
 1.  Copy "perceptron.py" into project directory.
 2.  Import "Perceptron" class:
     ```
@@ -19,7 +19,7 @@ Multilayer perceptron class written in Python.
     ```
     perceptron = Perceptron(1, layers) # (Input dimension, Layers)
     ```
-    The first argument is the length of each input. The second argument is the number of neurons and the activation function of every layer. Example:
+    The first argument is the length of each input (must be 1-dimensional). The second argument is a tuple containing the number of neurons and the activation function of every layer. Example:
     ```    
     layers = (
         (15, 'SIG'), # 15 neurons, sigmoid activation
@@ -27,5 +27,13 @@ Multilayer perceptron class written in Python.
     )
     ```
     Here the perceptron will have two layers:
-    * First layer will have 15 neurons, all with the sigmoid activation function
-    * Seconde layer will have 1 neuron with the linear activation function
+    * First layer will have 15 neurons, all using the sigmoid activation function
+    * Last layer will have 1 neuron using the linear activation function
+    
+ 4. Train the perceptron:
+    ```
+    perceptron.train(training_inputs, labels)
+    ```
+    Both arguments must be numpy arrays. The length of each label and the no. of neurons in the last layer must be equal.
+    
+### Optional arguments
