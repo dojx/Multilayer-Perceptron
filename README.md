@@ -40,10 +40,10 @@ Multilayer perceptron class written in Python.
     
 ### Optional
 #### Initialization
-* ```perceptron.learning_rate```:
+* ```perceptron.learning_rate```
 
     Learning rate is between 0 and 1, larger values make the weight changes more volatile. Default is 0.01
-* ```perceptron.threshold```:
+* ```perceptron.threshold```
 
     Epoch mode (default):
     ```
@@ -54,6 +54,17 @@ Multilayer perceptron class written in Python.
     perceptron.threshold = ('error', 0.01) # Train until total error is 0.01 or less (mean-squared error)
     ```
 #### Training
-* ```perceptron.train(training_inputs, labels, batch_size=(int)```:
+* ```perceptron.train(training_inputs, labels, batch_size=(int))```
 
     Size of training batches. Default value is 1 (Stochastic Gradient Descent).
+
+## Attributes & Methods
+* ```perceptron.weights```
+    
+    List of weights from first to last layer.
+* ```perceptron.epochs```
+    
+    Total number of epochs.
+* ```perceptron.predict(training_input)```
+    
+    Returns the output of the perceptron with its current weights.
