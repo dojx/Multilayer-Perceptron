@@ -17,7 +17,7 @@ Multilayer perceptron class written in Python.
     ```
 3.  Intialize a multilayer perceptron:
     ```
-    perceptron = Perceptron(1, layers) # (Input dimension, Layers)
+    perceptron = Perceptron({input_count}, {layers})
     ```
     The first argument is the length of each input (must be 1-dimensional). The second argument is a tuple containing the number of neurons and the activation function of every layer. Example:
     ```    
@@ -39,5 +39,10 @@ Multilayer perceptron class written in Python.
     Both arguments must be numpy arrays. The length of each label and the number of neurons in the last layer must be equal.
     
 ## Optional attributes
-* ```perceptron.threshold = ('epochs', 500) ```
+* ```perceptron.threshold = ('epochs', 500) # Train for 500 epochs (default)```:
+    Training threshold. Can be switched to convergence error mode:
+    ```
+    perceptron.threshold = ('error', 0.01) # Train until convergence error is 0.01 or less
+    ```
+    
 
