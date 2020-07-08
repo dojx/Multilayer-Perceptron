@@ -68,3 +68,7 @@ Multilayer perceptron class written in Python.
 * ```perceptron.predict(training_input)```
     
     Returns the output of the perceptron with its current weights.
+    
+ ## To-Do
+ * Add different loss functions
+ * Have neurons with different activation functions in the same layer
