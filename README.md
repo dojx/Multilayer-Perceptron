@@ -1,4 +1,4 @@
-# Multilayer Perceptron
+# Feedforward Neural Network
 Multilayer perceptron class written in Python.
 
 ## Features
